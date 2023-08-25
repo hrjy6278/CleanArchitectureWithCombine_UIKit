@@ -15,6 +15,9 @@
 		10FAA9C22A96EF62004FCC71 /* CleanArchitecture_SwiftVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9C12A96EF62004FCC71 /* CleanArchitecture_SwiftVersionTests.swift */; };
 		10FAA9CC2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9CB2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITests.swift */; };
 		10FAA9CE2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9CD2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITestsLaunchTests.swift */; };
+		10FAA9DC2A974C62004FCC71 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9DB2A974C62004FCC71 /* ViewModel.swift */; };
+		10FAA9DF2A974E3A004FCC71 /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 10FAA9DE2A974E3A004FCC71 /* CombineExt */; };
+		10FAA9E22A975004004FCC71 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 10FAA9E12A975004004FCC71 /* CombineCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		10FAA9C72A96EF62004FCC71 /* CleanArchitecture-SwiftVersionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CleanArchitecture-SwiftVersionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FAA9CB2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitecture_SwiftVersionUITests.swift; sourceTree = "<group>"; };
 		10FAA9CD2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitecture_SwiftVersionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10FAA9DB2A974C62004FCC71 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FAA9E22A975004004FCC71 /* CombineCocoa in Frameworks */,
+				10FAA9DF2A974E3A004FCC71 /* CombineExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +103,10 @@
 		10FAA9A92A96EF60004FCC71 /* CleanArchitecture-SwiftVersion */ = {
 			isa = PBXGroup;
 			children = (
-				10FAA9AA2A96EF60004FCC71 /* AppDelegate.swift */,
-				10FAA9AC2A96EF60004FCC71 /* SceneDelegate.swift */,
-				10FAA9AE2A96EF60004FCC71 /* ViewController.swift */,
+				10FAA9DA2A974C20004FCC71 /* App */,
+				10FAA9E52A98409A004FCC71 /* Repository */,
+				10FAA9E42A984095004FCC71 /* UseCase */,
+				10FAA9E32A98408D004FCC71 /* UI */,
 				10FAA9B32A96EF62004FCC71 /* Assets.xcassets */,
 				10FAA9B52A96EF62004FCC71 /* LaunchScreen.storyboard */,
 				10FAA9B82A96EF62004FCC71 /* Info.plist */,
@@ -124,6 +131,38 @@
 			path = "CleanArchitecture-SwiftVersionUITests";
 			sourceTree = "<group>";
 		};
+		10FAA9DA2A974C20004FCC71 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				10FAA9AA2A96EF60004FCC71 /* AppDelegate.swift */,
+				10FAA9AC2A96EF60004FCC71 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		10FAA9E32A98408D004FCC71 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				10FAA9AE2A96EF60004FCC71 /* ViewController.swift */,
+				10FAA9DB2A974C62004FCC71 /* ViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		10FAA9E42A984095004FCC71 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		10FAA9E52A98409A004FCC71 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +179,10 @@
 			dependencies = (
 			);
 			name = "CleanArchitecture-SwiftVersion";
+			packageProductDependencies = (
+				10FAA9DE2A974E3A004FCC71 /* CombineExt */,
+				10FAA9E12A975004004FCC71 /* CombineCocoa */,
+			);
 			productName = "CleanArchitecture-SwiftVersion";
 			productReference = 10FAA9A72A96EF60004FCC71 /* CleanArchitecture-SwiftVersion.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +255,10 @@
 				Base,
 			);
 			mainGroup = 10FAA99E2A96EF60004FCC71;
+			packageReferences = (
+				10FAA9DD2A974E3A004FCC71 /* XCRemoteSwiftPackageReference "CombineExt" */,
+				10FAA9E02A975004004FCC71 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
 			productRefGroup = 10FAA9A82A96EF60004FCC71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,6 +303,7 @@
 			files = (
 				10FAA9AF2A96EF60004FCC71 /* ViewController.swift in Sources */,
 				10FAA9AB2A96EF60004FCC71 /* AppDelegate.swift in Sources */,
+				10FAA9DC2A974C62004FCC71 /* ViewModel.swift in Sources */,
 				10FAA9AD2A96EF60004FCC71 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +632,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10FAA9DD2A974E3A004FCC71 /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		10FAA9E02A975004004FCC71 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10FAA9DE2A974E3A004FCC71 /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FAA9DD2A974E3A004FCC71 /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
+		};
+		10FAA9E12A975004004FCC71 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FAA9E02A975004004FCC71 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 10FAA99F2A96EF60004FCC71 /* Project object */;
 }
