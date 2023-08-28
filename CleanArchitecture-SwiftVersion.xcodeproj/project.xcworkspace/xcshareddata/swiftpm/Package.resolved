@@ -10,12 +10,30 @@
       }
     },
     {
+      "identity" : "combinedatasources",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CombineCommunity/CombineDataSources",
+      "state" : {
+        "revision" : "362795e0336f2c1637036f692a3b5d05806302b4",
+        "version" : "0.2.5"
+      }
+    },
+    {
       "identity" : "combineext",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CombineCommunity/CombineExt",
       "state" : {
         "revision" : "d7b896fa9ca8b47fa7bcde6b43ef9b70bf8c1f56",
         "version" : "1.8.1"
+      }
+    },
+    {
+      "identity" : "combineinterception",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chorim/CombineInterception",
+      "state" : {
+        "revision" : "9ed5378cff67ab5ccff2bc5abf055991d4d65368",
+        "version" : "0.1.1"
       }
     }
   ],

@@ -18,6 +18,16 @@
 		10FAA9DC2A974C62004FCC71 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9DB2A974C62004FCC71 /* ViewModel.swift */; };
 		10FAA9DF2A974E3A004FCC71 /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 10FAA9DE2A974E3A004FCC71 /* CombineExt */; };
 		10FAA9E22A975004004FCC71 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 10FAA9E12A975004004FCC71 /* CombineCocoa */; };
+		10FAA9E82A9C5878004FCC71 /* FetchClassListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9E72A9C5878004FCC71 /* FetchClassListUseCase.swift */; };
+		10FAA9EA2A9C591D004FCC71 /* DnDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9E92A9C591D004FCC71 /* DnDRepository.swift */; };
+		10FAA9ED2A9C5951004FCC71 /* DefaultFetchClassListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9EC2A9C5951004FCC71 /* DefaultFetchClassListUseCase.swift */; };
+		10FAA9F02A9C59A0004FCC71 /* ClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9EF2A9C59A0004FCC71 /* ClassList.swift */; };
+		10FAA9F22A9C5BC8004FCC71 /* DefaultDnDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9F12A9C5BC8004FCC71 /* DefaultDnDRepository.swift */; };
+		10FAA9F52A9C6185004FCC71 /* DnDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9F42A9C6185004FCC71 /* DnDAPI.swift */; };
+		10FAA9F82A9C6FB5004FCC71 /* CombineInterception in Frameworks */ = {isa = PBXBuildFile; productRef = 10FAA9F72A9C6FB5004FCC71 /* CombineInterception */; };
+		10FAA9FA2A9C70A4004FCC71 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9F92A9C70A4004FCC71 /* UIViewController+.swift */; };
+		10FAA9FD2A9C7451004FCC71 /* CombineDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 10FAA9FC2A9C7451004FCC71 /* CombineDataSources */; };
+		10FAA9FF2A9C7629004FCC71 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FAA9FE2A9C7629004FCC71 /* UITableViewCell+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,14 @@
 		10FAA9CB2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitecture_SwiftVersionUITests.swift; sourceTree = "<group>"; };
 		10FAA9CD2A96EF62004FCC71 /* CleanArchitecture_SwiftVersionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitecture_SwiftVersionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		10FAA9DB2A974C62004FCC71 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		10FAA9E72A9C5878004FCC71 /* FetchClassListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchClassListUseCase.swift; sourceTree = "<group>"; };
+		10FAA9E92A9C591D004FCC71 /* DnDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDRepository.swift; sourceTree = "<group>"; };
+		10FAA9EC2A9C5951004FCC71 /* DefaultFetchClassListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFetchClassListUseCase.swift; sourceTree = "<group>"; };
+		10FAA9EF2A9C59A0004FCC71 /* ClassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassList.swift; sourceTree = "<group>"; };
+		10FAA9F12A9C5BC8004FCC71 /* DefaultDnDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDnDRepository.swift; sourceTree = "<group>"; };
+		10FAA9F42A9C6185004FCC71 /* DnDAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDAPI.swift; sourceTree = "<group>"; };
+		10FAA9F92A9C70A4004FCC71 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		10FAA9FE2A9C7629004FCC71 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FAA9E22A975004004FCC71 /* CombineCocoa in Frameworks */,
+				10FAA9FD2A9C7451004FCC71 /* CombineDataSources in Frameworks */,
+				10FAA9F82A9C6FB5004FCC71 /* CombineInterception in Frameworks */,
 				10FAA9DF2A974E3A004FCC71 /* CombineExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				10FAA9DA2A974C20004FCC71 /* App */,
+				10FAA9F32A9C6173004FCC71 /* Util */,
+				10FAA9EE2A9C5994004FCC71 /* Model */,
 				10FAA9E52A98409A004FCC71 /* Repository */,
 				10FAA9E42A984095004FCC71 /* UseCase */,
 				10FAA9E32A98408D004FCC71 /* UI */,
@@ -143,8 +165,8 @@
 		10FAA9E32A98408D004FCC71 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				10FAA9AE2A96EF60004FCC71 /* ViewController.swift */,
 				10FAA9DB2A974C62004FCC71 /* ViewModel.swift */,
+				10FAA9AE2A96EF60004FCC71 /* ViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -152,6 +174,8 @@
 		10FAA9E42A984095004FCC71 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				10FAA9E62A98426E004FCC71 /* Protocol */,
+				10FAA9EC2A9C5951004FCC71 /* DefaultFetchClassListUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -159,8 +183,44 @@
 		10FAA9E52A98409A004FCC71 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				10FAA9EB2A9C5924004FCC71 /* Protocol */,
+				10FAA9F12A9C5BC8004FCC71 /* DefaultDnDRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		10FAA9E62A98426E004FCC71 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				10FAA9E72A9C5878004FCC71 /* FetchClassListUseCase.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		10FAA9EB2A9C5924004FCC71 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				10FAA9E92A9C591D004FCC71 /* DnDRepository.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		10FAA9EE2A9C5994004FCC71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10FAA9EF2A9C59A0004FCC71 /* ClassList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10FAA9F32A9C6173004FCC71 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				10FAA9F42A9C6185004FCC71 /* DnDAPI.swift */,
+				10FAA9F92A9C70A4004FCC71 /* UIViewController+.swift */,
+				10FAA9FE2A9C7629004FCC71 /* UITableViewCell+.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +242,8 @@
 			packageProductDependencies = (
 				10FAA9DE2A974E3A004FCC71 /* CombineExt */,
 				10FAA9E12A975004004FCC71 /* CombineCocoa */,
+				10FAA9F72A9C6FB5004FCC71 /* CombineInterception */,
+				10FAA9FC2A9C7451004FCC71 /* CombineDataSources */,
 			);
 			productName = "CleanArchitecture-SwiftVersion";
 			productReference = 10FAA9A72A96EF60004FCC71 /* CleanArchitecture-SwiftVersion.app */;
@@ -258,6 +320,8 @@
 			packageReferences = (
 				10FAA9DD2A974E3A004FCC71 /* XCRemoteSwiftPackageReference "CombineExt" */,
 				10FAA9E02A975004004FCC71 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				10FAA9F62A9C6FB5004FCC71 /* XCRemoteSwiftPackageReference "CombineInterception" */,
+				10FAA9FB2A9C7451004FCC71 /* XCRemoteSwiftPackageReference "CombineDataSources" */,
 			);
 			productRefGroup = 10FAA9A82A96EF60004FCC71 /* Products */;
 			projectDirPath = "";
@@ -301,9 +365,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FAA9EA2A9C591D004FCC71 /* DnDRepository.swift in Sources */,
+				10FAA9F22A9C5BC8004FCC71 /* DefaultDnDRepository.swift in Sources */,
+				10FAA9E82A9C5878004FCC71 /* FetchClassListUseCase.swift in Sources */,
 				10FAA9AF2A96EF60004FCC71 /* ViewController.swift in Sources */,
 				10FAA9AB2A96EF60004FCC71 /* AppDelegate.swift in Sources */,
+				10FAA9F02A9C59A0004FCC71 /* ClassList.swift in Sources */,
 				10FAA9DC2A974C62004FCC71 /* ViewModel.swift in Sources */,
+				10FAA9F52A9C6185004FCC71 /* DnDAPI.swift in Sources */,
+				10FAA9FA2A9C70A4004FCC71 /* UIViewController+.swift in Sources */,
+				10FAA9FF2A9C7629004FCC71 /* UITableViewCell+.swift in Sources */,
+				10FAA9ED2A9C5951004FCC71 /* DefaultFetchClassListUseCase.swift in Sources */,
 				10FAA9AD2A96EF60004FCC71 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +722,22 @@
 				minimumVersion = 0.4.1;
 			};
 		};
+		10FAA9F62A9C6FB5004FCC71 /* XCRemoteSwiftPackageReference "CombineInterception" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chorim/CombineInterception";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		10FAA9FB2A9C7451004FCC71 /* XCRemoteSwiftPackageReference "CombineDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -662,6 +750,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 10FAA9E02A975004004FCC71 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
+		};
+		10FAA9F72A9C6FB5004FCC71 /* CombineInterception */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FAA9F62A9C6FB5004FCC71 /* XCRemoteSwiftPackageReference "CombineInterception" */;
+			productName = CombineInterception;
+		};
+		10FAA9FC2A9C7451004FCC71 /* CombineDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10FAA9FB2A9C7451004FCC71 /* XCRemoteSwiftPackageReference "CombineDataSources" */;
+			productName = CombineDataSources;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
